@@ -182,6 +182,7 @@ header nav ul li a:hover::before{
 }
 
 .extension{
+    position: absolute;
     font-size: 2rem;
     padding: 2rem;
     background-color: #f2f2f2;
