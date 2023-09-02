@@ -842,6 +842,17 @@ section{
             height: 720vh;
         }
     }
+
+    @media(max-height: 770px){
+        section{
+            height: 750vh;
+        }
+    }
+    @media(max-height: 710px){
+        section{
+            height: 760vh;
+        }
+    }
 }
 /*decoration*/
 
