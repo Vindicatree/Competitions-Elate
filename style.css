@@ -238,6 +238,9 @@ nav{
     nav.open{
         right: 2%;
     }
+    header{
+        padding: 5px 40px ;
+    }
     @media (max-height: 769px){
         button{
             padding: 8px 0px;
@@ -851,6 +854,16 @@ section{
     @media(max-height: 710px){
         section{
             height: 760vh;
+        }
+    }
+    @media(max-height: 666px){
+        section{
+            height: 780vh;
+        }
+    }
+    @media(max-height: 650px){
+        section{
+            height: 800vh;
         }
     }
 }
