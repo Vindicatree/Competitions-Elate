@@ -347,7 +347,7 @@ nav{
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
-    background:rgba(0,0,0,0.4) url(jebal_.png);
+    background:rgba(0,0,0,0.56) url(Proposal_5.jpg);
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
@@ -763,6 +763,18 @@ section{
         height: 695vh;
     }
 
+    @media(max-height: 815px){
+        section{
+            height: 730vh;
+        }
+    }
+
+    @media(max-height: 730px){
+        section{
+            height: 750vh;
+        }
+    }
+
     .poster_part{
         display: flex;
         align-items: center;
@@ -846,17 +858,17 @@ section{
         }
     }
 
-    @media(max-height: 770px){
+    @media(max-height: 760px){
         section{
-            height: 750vh;
+            height: 740vh;
         }
     }
-    @media(max-height: 710px){
+    @media(max-height: 720px){
         section{
             height: 760vh;
         }
     }
-    @media(max-height: 666px){
+    @media(max-height: 685px){
         section{
             height: 780vh;
         }
