@@ -353,6 +353,10 @@ nav{
     background-repeat: no-repeat;
 }
 
+.body{
+    height: 800vh;
+}
+
 .bg {
     position: relative;
     display: flex;
@@ -409,7 +413,7 @@ nav{
 section{
     font-family: 'Montserrat', sans-serif;
     background-color: #f2f2f2;
-    height: 344vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -454,8 +458,15 @@ section{
     font-size: 35px;
 }
 
+.competitions-part{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 230vh;
+}
+
 .list-competitions{
-    margin-top: 200px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
 }
 
 .box-top{
@@ -538,10 +549,6 @@ section{
         padding: 10px 30px;
         font-size: 20px;
     }
-
-    section{
-        height: 330vh;
-    }
 }
 
 @media(max-width: 1205px){
@@ -555,8 +562,10 @@ section{
         font-size: 16px;
     }
 
-    section{
-        height: 320vh;
+    .competitions-part{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 210vh;
     }
 }
 
@@ -578,11 +587,6 @@ section{
     .poster-text .p1{
         font-size: 18px;
     }
-
-    section{
-        height: 310vh;
-    }
-    
 }
 
 @media(max-width: 1000px){
@@ -609,10 +613,6 @@ section{
         width: auto;
         height: 55vh;
     }
-
-    section{
-        height: 300vh;
-    }
 }
 
 @media(max-width: 800px){
@@ -629,10 +629,6 @@ section{
         font-size: 14px;
     }
 
-    section{
-        height: 280vh;
-    }
-
     .poster-text .subtitle{
         font-size: 25px;
         font-weight: 800;
@@ -646,23 +642,11 @@ section{
         width: auto;
         height: 50vh;
     }
-}
 
-@media(max-width: 760px){
-    section{
-        font-family: 'Montserrat', sans-serif;
+    .competitions-part{
         background-color: #f2f2f2;
-        height: 280vh;
-        position: relative;
-    }
-}
-
-@media(max-width: 730px){
-    section{
-        font-family: 'Montserrat', sans-serif;
-        background-color: #f2f2f2;
-        height: 280vh;
-        position: relative;
+        width: 100%;
+        height: 190vh;
     }
 }
 
@@ -676,9 +660,11 @@ section{
         padding: 6px 25px;
         font-size: 12px;
     }
-
-    section{
-        height: 268vh;
+    
+    .competitions-part{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 160vh;
     }
 }
 
@@ -700,10 +686,6 @@ section{
     
     .poster-text .p1{
         font-size: 12px;
-    }
-
-    section{
-        height: 258vh;
     }
 }
 
@@ -759,22 +741,6 @@ section{
         transition: .4s;
     }
 
-    section{
-        height: 695vh;
-    }
-
-    @media(max-height: 815px){
-        section{
-            height: 730vh;
-        }
-    }
-
-    @media(max-height: 730px){
-        section{
-            height: 750vh;
-        }
-    }
-
     .poster_part{
         display: flex;
         align-items: center;
@@ -807,6 +773,12 @@ section{
         text-align: center;
 
     }
+
+    .competitions-part{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 560vh;
+    }
 }
 
 @media(max-width: 515px){
@@ -827,10 +799,6 @@ section{
         margin-left: -1px;
         width: 400px;
     }
-
-    section{
-        height: 690vh;
-    }
 }
 
 @media(max-width: 425px){
@@ -850,33 +818,6 @@ section{
         text-align: center;
         margin-left: -1px;
         width: 300px;
-    }
-
-    @media(max-height: 835px){
-        section{
-            height: 720vh;
-        }
-    }
-
-    @media(max-height: 760px){
-        section{
-            height: 740vh;
-        }
-    }
-    @media(max-height: 720px){
-        section{
-            height: 760vh;
-        }
-    }
-    @media(max-height: 685px){
-        section{
-            height: 780vh;
-        }
-    }
-    @media(max-height: 650px){
-        section{
-            height: 800vh;
-        }
     }
 }
 /*decoration*/
