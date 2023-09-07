@@ -305,9 +305,13 @@ nav{
         font-size: 30px;
         cursor: pointer;
         display: block;
+        margin-right: 30px;
     }
     .logo_nav{
         font-size: 35px;
+    }
+    header{
+        padding: 10px 0px ;
     }
 }
 
@@ -326,6 +330,9 @@ nav{
 .text{
     color: #fff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title{
@@ -405,6 +412,24 @@ nav{
     .comment{
         font-size: 15px;
         font-weight: 600;
+    }
+}
+
+@media(max-width: 400px){
+    .title{
+        font-size: 25px;
+        font-weight: 800;
+        width: 500px;
+    }
+    
+    .comment{
+        font-size: 12px;
+        font-weight: 600;
+        width: 300px;
+    }
+
+    .wrapper{
+        height: 100vh;
     }
 }
 
@@ -828,6 +853,8 @@ section{
         }
     }
 }
+
+
 /*decoration*/
 
 .first-bloba{
