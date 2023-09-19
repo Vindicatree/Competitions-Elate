@@ -347,6 +347,7 @@ nav{
     font-size: 25px;
     font-weight: 600;
     transition: .4s;
+    width: 90%;
 }
 
 .wrapper{
@@ -354,7 +355,7 @@ nav{
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
-    background:rgba(0,0,0,0.56) url(Proposal_5.jpg);
+    background:rgba(0,0,0,0.56) url(tanpa\ bg\ check.PNG);
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
@@ -445,12 +446,10 @@ section{
 .poster_part{
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     position: relative;
     padding-top: 120px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .poster_part img{
@@ -461,20 +460,10 @@ section{
     box-shadow: 0 0 25px 2px #414141;
 }
 
-.poster-text{
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-}
-
-.poster-text .subtitle{
+.poster_part .subtitle{
     font-size: 35px;
     font-weight: 800;
-}
-
-.poster-text .p1{
-    font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .title-c{
@@ -599,11 +588,6 @@ section{
         padding: 0px 70px;
     }
 
-    .poster_part img{
-        width: auto;
-        height: 60vh;
-    }
-
     .poster-text .subtitle{
         font-size: 30px;
         font-weight: 800;
@@ -633,11 +617,6 @@ section{
     .poster-text .p1{
         font-size: 17px;
     }
-
-    .poster_part img{
-        width: auto;
-        height: 55vh;
-    }
 }
 
 @media(max-width: 800px){
@@ -654,8 +633,8 @@ section{
         font-size: 14px;
     }
 
-    .poster-text .subtitle{
-        font-size: 25px;
+    .poster_part .subtitle{
+        font-size: 30px;
         font-weight: 800;
     }
     
@@ -665,7 +644,7 @@ section{
 
     .poster_part img{
         width: auto;
-        height: 50vh;
+        height: 60vh;
     }
 
     .competitions-part{
@@ -690,27 +669,6 @@ section{
         background-color: #f2f2f2;
         width: 100%;
         height: 160vh;
-    }
-}
-
-@media(max-width: 650px){
-    .poster_part img{
-        width: auto;
-        height: 40vh;
-    }
-    .poster-text{
-        width: 1000px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 30px;
-    }
-    .poster-text .subtitle{
-        font-size: 21px;
-        font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 12px;
     }
 }
 
@@ -777,32 +735,28 @@ section{
     
     .poster_part img{
         width: auto;
-        height: 45vh;
+        height: 50vh;
     }
     
-    .poster-text{
-        margin-top: 30px;
-        flex-direction: column;
-        text-align: center;
-        margin-left: -1px;
-        width: 500px;
-    }
     
-    .poster-text .subtitle{
+    .poster_part .subtitle{
         font-size: 25px;
         font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 15px;
-        text-align: center;
-
     }
 
     .competitions-part{
         background-color: #f2f2f2;
         width: 100%;
         height: 560vh;
+    }
+
+    
+    @media(max-height: 798px){
+        .competitions-part{
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 600vh;
+        }
     }
 }
 
@@ -850,6 +804,14 @@ section{
             background-color: #f2f2f2;
             width: 100%;
             height: 580vh;
+        }
+    }
+
+    @media(max-height: 735px){
+        .competitions-part{
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 600vh;
         }
     }
 }
