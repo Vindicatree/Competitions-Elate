@@ -382,6 +382,7 @@ nav{
     width: 100%;
     object-fit: cover;
     z-index: 1;
+    display: none;
 }
 
 .background{    
@@ -494,6 +495,13 @@ section{
     transition: .4s;
 }
 
+.box .cardX{
+    display: inline-block;
+    padding: 0px 100px;
+    z-index: 1;
+    transition: .4s;
+}
+
 .box{
     display: flex;
     flex-direction: row;
@@ -502,6 +510,12 @@ section{
 }
 
 .layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,10 +567,64 @@ section{
     transition: .4s;
 }
 
+.barrier{
+    width: 290px;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.barrier .img{
+    position: absolute;
+    animation: carousel 12s infinite;
+    opacity: 0;
+}
+
+.barrier1 .img1{
+    position: absolute;
+}
+.barrier1 .img2{
+    animation-delay: 6s;
+}
+
+.barrier2 .img1{
+    position: absolute;
+}
+.barrier2 .img2{
+    animation-delay: 6s;
+}
+
+.barrier3 .img1{
+    position: absolute;
+}
+.barrier3 .img2{
+    animation-delay: 6s;
+}
+
+
+@keyframes carousel{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 1;
+        scale: 1.03;
+    }
+}
+
 @media(max-width: 1296px){
     .box .card img{
         width: auto;
         height: 40vh;
+    }
+
+    .box .cardX{
+        padding: 0px 30px;
     }
 
     .layout a{
@@ -569,6 +637,14 @@ section{
     .box .card img{
         width: auto;
         height: 35vh;
+    }
+
+    .barrier{
+        width: 270px;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .layout a{
@@ -588,6 +664,10 @@ section{
         padding: 0px 70px;
     }
 
+    .box .cardX{
+        padding: 0px 20px;
+    }
+
     .poster-text .subtitle{
         font-size: 30px;
         font-weight: 800;
@@ -602,11 +682,19 @@ section{
     .box .card{
         padding: 0px 50px;
     }
+
+    .box .cardX{
+        padding: 0px 20px;
+    }
 }
 
 @media(max-width: 900px){
     .box .card{
         padding: 0px 30px;
+    }
+
+    .box .cardX{
+        padding: 0px 5px;
     }
 
     .poster-text .subtitle{
@@ -652,12 +740,32 @@ section{
         width: 100%;
         height: 190vh;
     }
+
+    .box .cardX{
+        padding: 0px 0px;
+    }
+
+    .barrier{
+        width: 250px;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media(max-width: 720px){
     .box .card img{
         width: auto;
         height: 25vh;
+    }
+
+    .barrier{
+        width: 220px;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .layout a{
@@ -722,6 +830,14 @@ section{
         border-radius: 15px;
         box-shadow: 0 0 15px 1px #000;
         transition: .4s;
+    }
+
+    .barrier{
+        width: 290px;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .poster_part{
@@ -799,7 +915,7 @@ section{
         width: 300px;
     }
 
-    @media(max-height: 798px){
+    @media(max-height: 810px){
         .competitions-part{
             background-color: #f2f2f2;
             width: 100%;
@@ -807,7 +923,7 @@ section{
         }
     }
 
-    @media(max-height: 735px){
+    @media(max-height: 745px){
         .competitions-part{
             background-color: #f2f2f2;
             width: 100%;
