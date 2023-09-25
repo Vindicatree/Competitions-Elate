@@ -437,36 +437,6 @@ nav{
 
 /*content*/
 
-section{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f2f2f2;
-    height: 100vh;
-    position: relative;
-}
-
-.poster_part{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    padding-top: 120px;
-}
-
-.poster_part img{
-    width: auto;
-    height: 70vh;
-    border: 6px solid #584129;
-    border-radius: 20px;
-    box-shadow: 0 0 25px 2px #414141;
-}
-
-.poster_part .subtitle{
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-
 .title-c{
     text-align: center;
     font-weight: 800;
@@ -476,7 +446,7 @@ section{
 .competitions-part{
     background-color: #f2f2f2;
     width: 100%;
-    height: 230vh;
+    height: 400vh;
 }
 
 .list-competitions{
@@ -484,48 +454,77 @@ section{
     padding-top: 40px;
 }
 
-.box-top{
-    margin-top: 80px;
-}
-
-.box .card{
-    display: inline-block;
-    padding: 0px 100px;
-    z-index: 1;
-    transition: .4s;
-}
-
-.box .cardX{
-    display: inline-block;
-    padding: 0px 100px;
-    z-index: 1;
-    transition: .4s;
-}
-
-.box{
+.content1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 120px;
+    align-items: center;
+}
+
+.card{
+    margin-top: 80px;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+.card2{
+    margin-top: 80px;
+    width: 90%;
+    display: grid;
+    place-items: center;
 }
 
 .layout{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
-.layout1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*text 5*/
+
+.layout .text5{
+    margin-left: 50px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.layout .text5 .subtitle{
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.layout .text5 .desc{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/*text 6*/
+
+.layout .text6{
+    margin-right: 50px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+
+.layout .text6 .subtitle{
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.layout .text6 .desc{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 
 .layout a{
     text-decoration: none;
-    color: #6D4424;
+    color: #000;
     padding: 10px 30px;
-    border: 4px solid #6D4424;
+    border: 4px solid #000;
     font-weight: 800;
     font-size: 25px;
     margin-top: 25px;
@@ -539,7 +538,7 @@ section{
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #6D4424;
+    background-color: #000;
     position: absolute;
     top: 0;
     left: 0;
@@ -558,7 +557,7 @@ section{
     color: #f2f2f2;
 }
 
-.box .card img{
+.card img{
     width: auto;
     height: 45vh;
     border: 6px solid #9A7047;
@@ -567,8 +566,18 @@ section{
     transition: .4s;
 }
 
+.card2 img{
+    width: auto;
+    height: 45vh;
+    border: 6px solid #9A7047;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 1px #000;
+    transition: .4s;
+}
+
+
 .barrier{
-    width: 290px;
+    width: 310px;
     height: 45vh;
     display: flex;
     align-items: center;
@@ -618,254 +627,78 @@ section{
 }
 
 @media(max-width: 1296px){
-    .box .card img{
-        width: auto;
-        height: 40vh;
-    }
-
-    .box .cardX{
-        padding: 0px 30px;
-    }
 
     .layout a{
         padding: 10px 30px;
         font-size: 20px;
     }
-}
 
-@media(max-width: 1205px){
-    .box .card img{
-        width: auto;
-        height: 35vh;
-    }
-
-    .barrier{
-        width: 270px;
-        height: 35vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .layout a{
-        padding: 8px 28px;
-        font-size: 16px;
-    }
-
-    .competitions-part{
-        background-color: #f2f2f2;
-        width: 100%;
-        height: 210vh;
-    }
-}
-
-@media(max-width: 1110px){
-    .box .card{
-        padding: 0px 70px;
-    }
-
-    .box .cardX{
-        padding: 0px 20px;
-    }
-
-    .poster-text .subtitle{
-        font-size: 30px;
-        font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 18px;
-    }
-}
-
-@media(max-width: 1000px){
-    .box .card{
-        padding: 0px 50px;
-    }
-
-    .box .cardX{
-        padding: 0px 20px;
-    }
-}
-
-@media(max-width: 900px){
-    .box .card{
-        padding: 0px 30px;
-    }
-
-    .box .cardX{
-        padding: 0px 5px;
-    }
-
-    .poster-text .subtitle{
-        font-size: 28px;
-        font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 17px;
-    }
 }
 
 @media(max-width: 800px){
     .title-c{
-        font-size: 25px;
-    }
-    .box .card img{
-        width: auto;
-        height: 30vh;
+        font-size: 30px;
     }
 
     .layout a{
-        padding: 7px 26px;
-        font-size: 14px;
-    }
-
-    .poster_part .subtitle{
-        font-size: 30px;
-        font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 13px;
-    }
-
-    .poster_part img{
-        width: auto;
-        height: 60vh;
+        padding: 8px 28px;
+        font-size: 18px;
     }
 
     .competitions-part{
         background-color: #f2f2f2;
         width: 100%;
-        height: 190vh;
+        height: 340vh;
     }
 
-    .box .cardX{
-        padding: 0px 0px;
+    .layout img{
+        width: auto;
+        height: 35vh;
     }
 
     .barrier{
-        width: 250px;
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 230px;
+        height: 35vh;
     }
+
+    .layout .text5{
+        margin-left: 30px;
+    }
+
+    .layout .text5 .subtitle{
+        font-size: 35px;
+    }
+    
+    .layout .text5 .desc{
+        font-size: 20px;
+    }
+
+    .layout .text6{
+        margin-right: 30px;
+    }
+
+    .layout .text6 .subtitle{
+        font-size: 35px;
+    }
+    
+    .layout .text6 .desc{
+        font-size: 20px;
+    }
+
 }
 
-@media(max-width: 720px){
-    .box .card img{
-        width: auto;
-        height: 25vh;
-    }
-
+@media(max-width: 700px){
     .barrier{
-        width: 220px;
-        height: 25vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 260px;
     }
 
-    .layout a{
-        padding: 6px 25px;
-        font-size: 12px;
-    }
-    
-    .competitions-part{
-        background-color: #f2f2f2;
-        width: 100%;
-        height: 160vh;
-    }
 }
 
 @media(max-width: 610px){
 
-    .title-c{
-        text-align: center;
-        font-weight: 800;
-        font-size: 25px;
-        margin-bottom: 100px;
-    }
-
-    .box .card{
-        display: inline-block;
-        z-index: 1;
-        transition: .4s;
-    }
-    
-    .box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: -120px;
-    }
-    
-    .layout{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 100px 0px;
-    }
-    
-    .layout a{
-        text-decoration: none;
-        color: #6D4424;
-        padding: 10px 30px;
-        border: 4px solid #6D4424;
-        font-weight: 800;
-        font-size: 25px;
-        margin-top: 25px;
-        border-radius: 5px;
-        position: relative;
-        z-index: 1;
-        transition: .3s;
-    }
-    
-    .box .card img{
-        width: auto;
-        height: 45vh;
-        border: 6px solid #9A7047;
-        border-radius: 15px;
-        box-shadow: 0 0 15px 1px #000;
-        transition: .4s;
-    }
-
     .barrier{
-        width: 290px;
-        height: 45vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 280px;
     }
-
-    .poster_part{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        padding-top: 120px;
-    }
-    
-    .poster_part img{
-        width: auto;
-        height: 50vh;
-    }
-    
-    
-    .poster_part .subtitle{
-        font-size: 25px;
-        font-weight: 800;
-    }
-
-    .competitions-part{
-        background-color: #f2f2f2;
-        width: 100%;
-        height: 560vh;
-    }
-
     
     @media(max-height: 798px){
         .competitions-part{
@@ -874,62 +707,95 @@ section{
             height: 600vh;
         }
     }
+
 }
 
-@media(max-width: 515px){
-    .poster-text .subtitle{
-        font-size: 22px;
-        font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 12px;
-        text-align: center;
+@media (max-width: 590px){
+
+    .competitions-part{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 290vh;
     }
 
-    .poster-text{
-        margin-top: 30px;
-        flex-direction: column;
-        text-align: center;
-        margin-left: -1px;
-        width: 400px;
+    .layout img{
+        height: 28vh;
+    }
+
+    .barrier{
+        width: 225px;
+        height: 28vh;
+    }
+
+    .layout .text5 .subtitle{
+        font-size: 25px;
+    }
+
+    .layout .text6 .subtitle{
+        font-size: 25px;
+    }
+
+    .layout .text5 .desc{
+        font-size: 18px;
+    }
+
+    .layout .text6 .desc{
+        font-size: 18px;
+    }
+
+    .layout a{
+        padding: 7px 26px;
+        font-size: 16px;
     }
 }
 
-@media(max-width: 425px){
-    .poster-text .subtitle{
+@media(max-width: 432px){
+
+    .competitions-part{
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 250vh;
+    }
+
+    .layout .text5 .subtitle{
         font-size: 20px;
-        font-weight: 800;
-    }
-    
-    .poster-text .p1{
-        font-size: 12px;
-        text-align: center;
     }
 
-    .poster-text{
-        margin-top: 30px;
-        flex-direction: column;
-        text-align: center;
-        margin-left: -1px;
-        width: 300px;
+    .layout .text6 .subtitle{
+        font-size: 20px;
     }
 
-    @media(max-height: 810px){
+    .layout .text5 .desc{
+        font-size: 14px;
+    }
+
+    .layout .text6 .desc{
+        font-size: 14px;
+    }
+
+    .layout a{
+        padding: 6px 24px;
+        font-size: 14px;
+    }
+
+    .layout img{
+        width: auto;
+        height: 24vh;
+    }
+
+    .barrier{
+        width: 200px;
+        height: 24vh;
+    }
+
+    @media(max-height: 860px){
         .competitions-part{
             background-color: #f2f2f2;
             width: 100%;
-            height: 580vh;
+            height: 270vh;
         }
     }
 
-    @media(max-height: 745px){
-        .competitions-part{
-            background-color: #f2f2f2;
-            width: 100%;
-            height: 600vh;
-        }
-    }
 }
 
 
